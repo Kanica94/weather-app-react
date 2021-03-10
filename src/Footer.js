@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <div className="Footer">
       <h5 className="myName">
-        <a href="https://github.com/Kanica94/weather-react" target="_blank">
+        <a href="https://github.com/Kanica94/weather-app-react" target="_blank">
           Open-source code
         </a>{" "}
         by{" "}
