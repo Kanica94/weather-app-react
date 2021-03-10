@@ -31,11 +31,7 @@ export default function Weather() {
             <button type="submit" className="btn btn-primary">
               <i className="fas fa-search" />
             </button>
-            <button
-              type="button"
-              className="location"
-              className="btn btn-outline-dark"
-            >
+            <button type="button" className="btn btn-outline-dark">
               <i className="fas fa-map-marker-alt" />
             </button>
           </form>
@@ -63,12 +59,7 @@ export default function Weather() {
                       </a>
                     </span>
                   </div>
-                  <img
-                    className="float-left"
-                    src={weatherData.imgUrl}
-                    className="icon"
-                    alt=""
-                  />
+                  <img className="float-left" src={weatherData.imgUrl} alt="" />
                 </div>
               </div>
               <div className="col-5">
