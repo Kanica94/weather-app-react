@@ -1,5 +1,7 @@
 import React from "react";
 import "./Weather.css";
+import "bootstrap/dist/css/bootstrap.css";
+import Footer from "./Footer";
 
 export default function Weather() {
   let weatherData = {
@@ -130,6 +132,7 @@ export default function Weather() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
