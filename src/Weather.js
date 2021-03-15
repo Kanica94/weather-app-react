@@ -1,6 +1,5 @@
 import React from "react";
 import "./Weather.css";
-import "bootstrap/dist/css/bootstrap.css";
 import Footer from "./Footer";
 
 export default function Weather() {
@@ -86,37 +85,37 @@ export default function Weather() {
                   Now <br />
                   <img src={weatherData.imgUrl} width="50px" alt="sun" />
                   <br />
-                  10°
+                  <span className="degree">10°</span>
                 </div>
                 <div className="col-2">
                   14:00 <br />
                   <img src={weatherData.imgUrl} width="50px" alt="sun" />
                   <br />
-                  8°
+                  <span className="degree">8°</span>
                 </div>
                 <div className="col-2">
                   15:00 <br />
                   <img src={weatherData.imgUrl} width="50px" alt="sun" />
                   <br />
-                  8°
+                  <span className="degree">8°</span>
                 </div>
                 <div className="col-2">
                   16:00 <br />
                   <img src={weatherData.imgUrl} width="50px" alt="darkclouds" />
                   <br />
-                  6°
+                  <span className="degree">6°</span>
                 </div>
                 <div className="col-2">
                   17:00 <br />
                   <img src={weatherData.imgUrl} width="50px" alt="darkclouds" />
                   <br />
-                  5°
+                  <span className="degree">5°</span>
                 </div>
                 <div className="col-2">
                   18:00 <br />
                   <img src={weatherData.imgUrl} width="50px" alt="darkclouds" />
                   <br />
-                  4°
+                  <span className="degree">4°</span>
                 </div>
               </div>
             </div>

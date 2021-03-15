@@ -4,7 +4,7 @@
   margin: 0px auto;
   margin-top: 50px;
   width: 35rem;
-  border-radius: 40px;
+  border-radius: 30px;
   border-color: #36597ca6;
   display: block;
   border-style: solid;
@@ -21,14 +21,14 @@
 
 .Weather input {
   padding: 6px;
-  border-radius: 10px;
+  border-radius: 8px;
   margin-bottom: 20px;
   margin-right: 5px;
 }
 
 .Weather button {
   margin-right: 3px;
-  border-radius: 10px;
+  border-radius: 8px;
   padding: 5px 10px;
 }
 
@@ -38,13 +38,13 @@
   font-size: 30px;
   line-height: 26px;
   position: relative;
-  left: 120px;
+  left: 140px;
 }
 
 .Weather .date {
   color: #555454;
   position: relative;
-  left: 130px;
+  left: 150px;
 }
 
 .Weather .main-temperature .main-temp {
@@ -58,7 +58,7 @@
 
 .Weather .main-temperature img {
   position: relative;
-  left: 50px;
+  left: 55px;
   top: 9px;
 }
 
@@ -67,9 +67,10 @@
   color: #414040;
 }
 
-.Weather .main-temperature .active {
+.Weather .main-temperature .celsius-active {
   color: #414040;
   cursor: default;
+  text-decoration: none;
 }
 
 .col-5 li {
@@ -85,7 +86,17 @@
   text-transform: capitalize;
 }
 
+.tableone {
+  position: relative;
+  left: 10px;
+}
+
 .tableone img {
   position: relative;
   left: -10px;
+}
+
+.tableone .degree {
+  position: relative;
+  left: 10px;
 }
