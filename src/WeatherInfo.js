@@ -1,5 +1,6 @@
 import React from "react";
 import FormatDate from "./FormatDate";
+import Temperature from "./Temperature";
 
 export default function WeatherInfo(props) {
   return (
@@ -16,18 +17,7 @@ export default function WeatherInfo(props) {
           <div className="col-7">
             <div className="clearfix main-temperature">
               <div className="float-left">
-                <strong>
-                  <span className="main-temp">{props.data.temperature}</span>
-                </strong>
-                <span className="units">
-                  <a href="/" className="celsius-active">
-                    °C
-                  </a>
-                  |
-                  <a href="/" className="fahrenheit-link">
-                    °F
-                  </a>
-                </span>
+                <Temperature celsius={props.data.tempertature} />
               </div>
               <img
                 className="float-left"

@@ -68,12 +68,7 @@
   color: #414040;
   position: relative;
   left: 20px;
-}
-
-.Weather .main-temperature .celsius-active {
-  color: #414040;
-  cursor: default;
-  text-decoration: none;
+  line-height: 1;
 }
 
 .col-5 li {
