@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./Weather.css";
+import FormatDate from "./FormatDate";
 import Footer from "./Footer";
 
 export default function Weather(props) {
@@ -17,7 +18,7 @@ export default function Weather(props) {
       min: Math.round(response.data.main.temp_min),
       humidity: Math.round(response.data.main.humidity),
       wind: Math.round(response.data.wind.speed),
-      date: "Wed 24 Feb 11:30",
+      date: new Date(response.data.dt * 1000),
     });
   }
 
@@ -46,7 +47,9 @@ export default function Weather(props) {
             <h3 className="city-name">
               {weatherData.city}, {weatherData.country}
             </h3>
-            <h6 className="date">{weatherData.date}</h6>
+            <h6 className="date">
+              <FormatDate date={weatherData.date} />
+            </h6>
 
             <div className="overview">
               <div className="row">
