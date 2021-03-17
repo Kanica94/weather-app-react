@@ -53,18 +53,21 @@
   font-weight: 400;
   position: relative;
   top: 30px;
+  left: 20px;
   color: #414040;
 }
 
 .Weather .main-temperature img {
   position: relative;
-  left: 55px;
+  left: 85px;
   top: 9px;
 }
 
 .Weather .main-temperature .units {
   font-size: 16px;
   color: #414040;
+  position: relative;
+  left: 20px;
 }
 
 .Weather .main-temperature .celsius-active {
