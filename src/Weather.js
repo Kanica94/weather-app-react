@@ -12,7 +12,7 @@ export default function Weather(props) {
       city: response.data.name,
       country: response.data.sys.country,
       temperature: Math.round(response.data.main.temp),
-      imgUrl: "https://openweathermap.org/img/wn/02d@2x.png",
+      imgUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
       description: response.data.weather[0].description,
       max: Math.round(response.data.main.temp_max),
       min: Math.round(response.data.main.temp_min),
