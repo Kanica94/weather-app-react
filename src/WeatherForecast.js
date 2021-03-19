@@ -8,8 +8,8 @@ export default function WeatherForecast(props) {
   const [forecast, setForecast] = useState(null);
 
   function handleForecast(response) {
-    setLoaded(true);
     setForecast(response.data);
+    setLoaded(true);
   }
 
   if (loaded && props.city === forecast.city.name) {
@@ -27,7 +27,7 @@ export default function WeatherForecast(props) {
   } else {
     const apiKey = "0864ac7dec2540b572d96a9d7503af67";
     const unit = "metric";
-    let apiUrl = `api.openweathermap.org/data/2.5/forecast?q=${props.city}&appid=${apiKey}&units=${unit}`;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${props.city}&appid=${apiKey}&units=${unit}`;
     axios.get(apiUrl).then(handleForecast);
 
     return "Loading";
