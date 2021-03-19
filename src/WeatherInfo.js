@@ -42,46 +42,6 @@ export default function WeatherInfo(props) {
         </div>
         <br />
         <hr />
-        <div className="tableone">
-          <div className="row">
-            <div className="col-2">
-              Now <br />
-              <img src={props.data.imgUrl} width="50px" alt="sun" />
-              <br />
-              <span className="degree">10°</span>
-            </div>
-            <div className="col-2">
-              14:00 <br />
-              <img src={props.data.imgUrl} width="50px" alt="sun" />
-              <br />
-              <span className="degree">8°</span>
-            </div>
-            <div className="col-2">
-              15:00 <br />
-              <img src={props.data.imgUrl} width="50px" alt="sun" />
-              <br />
-              <span className="degree">8°</span>
-            </div>
-            <div className="col-2">
-              16:00 <br />
-              <img src={props.data.imgUrl} width="50px" alt="darkclouds" />
-              <br />
-              <span className="degree">6°</span>
-            </div>
-            <div className="col-2">
-              17:00 <br />
-              <img src={props.data.imgUrl} width="50px" alt="darkclouds" />
-              <br />
-              <span className="degree">5°</span>
-            </div>
-            <div className="col-2">
-              18:00 <br />
-              <img src={props.data.imgUrl} width="50px" alt="darkclouds" />
-              <br />
-              <span className="degree">4°</span>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );

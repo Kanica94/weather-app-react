@@ -83,18 +83,3 @@
 .col-5 li:first-letter {
   text-transform: capitalize;
 }
-
-.tableone {
-  position: relative;
-  left: 10px;
-}
-
-.tableone img {
-  position: relative;
-  left: -10px;
-}
-
-.tableone .degree {
-  position: relative;
-  left: 10px;
-}

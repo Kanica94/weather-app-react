@@ -1,0 +1,15 @@
+.WeatherForecast {
+  text-align: center;
+  position: relative;
+  left: 10px;
+}
+
+.WeatherForecast .degree {
+  position: relative;
+  left: 10px;
+}
+
+.WeatherForecast canvas {
+  display: bloxk;
+  margin: 5px o;
+}
