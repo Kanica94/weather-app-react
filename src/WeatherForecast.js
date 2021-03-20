@@ -16,11 +16,13 @@ export default function WeatherForecast(props) {
     return (
       <div className="WeatherForecast">
         <div className="row">
-          <div className="col-2">
-            {forecast.list.slice(0, 5).map(function (forecastItem) {
-              return <WeatherForecastData data={forecastItem} />;
-            })}
-          </div>
+          {forecast.list.slice(0, 6).map(function (forecastItem) {
+            return (
+              <div className="col-2">
+                <WeatherForecastData data={forecastItem} />
+              </div>
+            );
+          })}
         </div>
       </div>
     );
