@@ -1,5 +1,5 @@
 import React from "react";
-import Weather from "./Weather";
+import "./WeatherForecastData.css";
 
 export default function WeatherForecastData(props) {
   function hours() {
@@ -16,7 +16,10 @@ export default function WeatherForecastData(props) {
   return (
     <div className="WeatherForecastData">
       {hours()} <br />
-      <Weather code={props.data.weather[0].icon} />
+      <img
+        src={`http://openweathermap.org/img/wn/${props.data.weather[0].icon}@2x.png`}
+        alt={props.data.description}
+      />
       <br />
       <span className="degree">{temperature()}</span>
     </div>
