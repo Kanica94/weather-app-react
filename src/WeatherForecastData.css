@@ -4,6 +4,8 @@
 }
 
 .WeatherForecastData img {
-  width: 55px;
-  height: 55px;
+  width: 60px;
+  height: 60px;
+  position: relative;
+  left: -5px;
 }
